@@ -167,7 +167,7 @@ p
 
 :::{.incremental}
 - Issue 1: Cyclic behavior and nonlinear trends.
-- Issue 2: Proprietary software kills innovation.
+- Issue 2: Proprietary software kills innovation (but admittedly does help non-specialists).
 - Issue 3: Computation scales poorly when using latent variables.
 :::
 
@@ -214,6 +214,11 @@ Data from @carneyPositiveNegativeDaily2000
     \label{eq:VARPsiLevel2}
     \log \boldsymbol{\psi}_{i}^{2} &= \boldsymbol{\gamma}_{\psi} + \boldsymbol{u}_{\psi i} \\
     & \boldsymbol{u}_{i} = (\boldsymbol{u}_{\alpha i}', \boldsymbol{\gamma}_{\psi} + \boldsymbol{u}_{\psi i}', \boldsymbol{u}_{\psi i}')' \sim N(\boldsymbol{0}, \boldsymbol{T}) \\
+\end{align}
+
+. . .
+
+\begin{align}
     \label{eq:VARSmoothLevel2}
     \boldsymbol{f}_{i}\left(\boldsymbol{x}_{it}\right) &= \boldsymbol{s}\left(\boldsymbol{x}_{it}\right) + \boldsymbol{s}_{p}\left(\boldsymbol{x}_{it}\right) + \boldsymbol{s}_{i}\left(\boldsymbol{x}_{it}\right) 
 \end{align}
@@ -384,6 +389,11 @@ $$
 \boldsymbol{\eta}_{it} \sim P(\boldsymbol{\eta}_{it} | \Theta, \Theta_{i}, \Theta_{t}) \text{ for } i=1,\dots,N \text{ and } t=1,\dots, T
 $$
 
+. . .
+
+$$
+\mathcal{O}(N \times T)
+$$
 
 ## Theorem in Forthcoming Paper
 

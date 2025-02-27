@@ -468,7 +468,7 @@
 <div>
 <ul>
 <li class="fragment">Issue 1: Cyclic behavior and nonlinear trends.</li>
-<li class="fragment">Issue 2: Proprietary software kills innovation.</li>
+<li class="fragment">Issue 2: Proprietary software kills innovation (but admittedly does help non-specialists).</li>
 <li class="fragment">Issue 3: Computation scales poorly when using latent variables.</li>
 </ul>
 </div>
@@ -515,6 +515,10 @@
     \label{eq:VARPsiLevel2}
     \log \boldsymbol{\psi}_{i}^{2} &amp;= \boldsymbol{\gamma}_{\psi} + \boldsymbol{u}_{\psi i} \\
     &amp; \boldsymbol{u}_{i} = (\boldsymbol{u}_{\alpha i}', \boldsymbol{\gamma}_{\psi} + \boldsymbol{u}_{\psi i}', \boldsymbol{u}_{\psi i}')' \sim N(\boldsymbol{0}, \boldsymbol{T}) \\
+\end{align}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align}
     \label{eq:VARSmoothLevel2}
     \boldsymbol{f}_{i}\left(\boldsymbol{x}_{it}\right) &amp;= \boldsymbol{s}\left(\boldsymbol{x}_{it}\right) + \boldsymbol{s}_{p}\left(\boldsymbol{x}_{it}\right) + \boldsymbol{s}_{i}\left(\boldsymbol{x}_{it}\right)
 \end{align}\]</span></p>
@@ -679,6 +683,11 @@ s(x_{P})
 <div class="fragment">
 <p><span class="math display">\[
 \boldsymbol{\eta}_{it} \sim P(\boldsymbol{\eta}_{it} | \Theta, \Theta_{i}, \Theta_{t}) \text{ for } i=1,\dots,N \text{ and } t=1,\dots, T
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\mathcal{O}(N \times T)
 \]</span></p>
 </div>
 </section>
